@@ -27,10 +27,10 @@ do {
     } else if ((numero_utente < 1) || (numero_utente > 100)){
         console.log('Inserisci un numero corretto');
     }
-} while (!arr.includes(numero_utente) || arr_utente.length > 84);
+} while (!arr.includes(numero_utente) && arr_utente.length != 84);
 
 if (arr_utente.length == 84) {
-    console.log('Hai vinto!');
+    console.log('Complimenti, sei riuscito ad evitare le 16 mine! Hai vinto!');
 } else {
-    console.log('hai perso!');
+    console.log('hai perso! Hai fatto ' + arr_utente.length + ' tentativi.');
 }
